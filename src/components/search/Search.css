@@ -1,0 +1,29 @@
+.search-block{
+    display: flex;
+    justify-content: space-between;
+padding-top: 40px;
+}
+.search-block h1{
+    font-size: 32px;
+    font-weight: 700;
+}
+.search-input{
+    width:250px;
+    height: 45px;
+    border-radius: 10px;
+padding-left: 25px;
+border: 1px solid #F3F3F3;
+    outline: none;
+   
+}  
+.search-icon{
+    position: absolute;
+ margin-top: 15px;
+ color: #E4E4E4;
+ padding-left: 5px;
+}
+.input{
+
+}
+
+

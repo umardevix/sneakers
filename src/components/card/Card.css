@@ -1,0 +1,85 @@
+.card {
+	width: 210px;
+	padding: 22px 29px;
+	border: 3px solid #F8F8F8;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: all ease-in-out .2s;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 1px -2px 36px -17px rgba(34, 60, 80, 0.2);
+}
+
+.card-img-content {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.card_heart {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #F8F8F8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7px;
+	cursor: pointer;
+	position: absolute;
+
+}
+
+.heart {
+	color: #EAEAEA;
+	width: 16px;
+	height: 16px;
+}
+
+.card_info {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.card_info h3 {
+	font-size: 14px;
+	color: #000000;
+	line-height:
+		16.94px;
+}
+
+.card_add {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card_price span {
+	font-size: 11px;
+	line-height: 13.31px;
+	color: #BDBDBD;
+	text-transform: uppercase;
+}
+
+.card_price p {
+	font-size: 14px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.add_plus {
+	border: 1px solid #F2F2F2;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+.plus {
+	color: #D3D3D3;
+}
