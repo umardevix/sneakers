@@ -3,7 +3,7 @@ import './Card.css'
 import { FaPlus } from "react-icons/fa6";
 import { IoMdHeartEmpty } from "react-icons/io";
 
-const Card = ({ item }) => {
+const Card = ({ item, addProduct }) => {
 
 	return (
 		<div className='card'>
@@ -20,7 +20,7 @@ const Card = ({ item }) => {
 						<span>Pена:</span>
 						<p>{item.price} руб.</p>
 					</div>
-					<div className='add_plus'>
+					<div onClick={() => addProduct(item)} className='add_plus'>
 						<FaPlus className='plus' />
 					</div>
 				</div>

@@ -1,0 +1,41 @@
+.over_basket {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	background: #0000007b;
+	z-index: 1;
+	display: flex;
+	justify-content: end;
+}
+
+.basket_info {
+	width: 385px;
+	height: 100vh;
+	background: #FFFFFF;
+	padding: 32px 30px;
+}
+
+.title_basket {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.basket_block {
+	margin-top: 30px;
+}
+
+.basket_card {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 21px;
+
+}
+
+.basket_card img {
+	width: 70px;
+	height: 70px;
+}

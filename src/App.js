@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Card from './components/card/Card.jsx';
 import Header from './components/header/Header';
 import Search from './components/search/Search';
+import axios from 'axios';
 
 function App() {
   const [product, setProduct] = useState([])
@@ -20,6 +21,23 @@ function App() {
     fetchProduct()
   }, [])
 
+  const addProduct = async (item) => {
+    try {
+      const res = await axios.post('http://localhost:8000/cart', {
+        id: item.id,
+        image: item.image,
+        title: item.title,
+        price: item.price
+      });
+
+      // Обработать ответ, если нужно
+      console.log(res.data);
+
+    } catch (error) {
+      console.log('Продукт не добавлен', error);
+    }
+  }
+
 
   return (
     <div className="wrapper">
@@ -31,7 +49,7 @@ function App() {
 
           {
             product.map(el => (
-              <Card key={el.id} item={el} />
+              <Card addProduct={addProduct} key={el.id} item={el} />
             ))
           }
         </div>
